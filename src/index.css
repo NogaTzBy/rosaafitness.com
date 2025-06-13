@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #EA9B25;
+  --brand-light: #F2B567;   /* +20% luminosidad */
+  --brand-dark:  #B0701D;   /* -20% luminosidad */
+  --brand-glow:  rgba(234,155,37,0.5);
+}
+
+.highlight {
+  color: #ea9b25;
+}
