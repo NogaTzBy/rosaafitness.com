@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #EA9B25;
+  --brand-light: #F2B567;   /* +20% luminosidad */
+  --brand-dark:  #B0701D;   /* -20% luminosidad */
+  --brand-glow:  rgba(234,155,37,0.5);
+}
+
+.highlight {
+  color: #ea9b25;
+}
+
+/* Enhanced glow animation for the WhatsApp button */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(234, 155, 37, 0.6), 0 0 40px rgba(234, 155, 37, 0.4), 0 0 60px rgba(234, 155, 37, 0.2);
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(234, 155, 37, 0.8), 0 0 60px rgba(234, 155, 37, 0.6), 0 0 90px rgba(234, 155, 37, 0.4);
+    opacity: 1;
+  }
+}
